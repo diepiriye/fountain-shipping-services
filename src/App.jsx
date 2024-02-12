@@ -4,6 +4,8 @@ import Slider from './slider.jsx'
 //import Navbar from './navbarr.jsx'
 import About from  './about.jsx'
 import Services from  './service.jsx'
+import Contact from  './contact.jsx'
+import Form from  './form.jsx'
 import Footer from  './footer.jsx'
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Slider />
       <About />
       <Services />
+      <Contact />
+      <Form />
       <Footer />
     </div>
   )

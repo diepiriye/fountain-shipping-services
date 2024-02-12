@@ -26,7 +26,7 @@ export default function About(){
             </div>
             <div className="about-core">
                 <div className="mission">
-                    <i class="fa-solid fa-rocket"></i>
+                    <i className="fa-solid fa-rocket"></i>
                     <h2>Our mission</h2>
                     <p>To provide a world class range of professional quality services in the marine industry to all our clients.</p>
                 </div>
@@ -36,7 +36,7 @@ export default function About(){
                     <p>To be the foremost shipping company in Africa that is most admired for it's excellence, efficiency and professionalism.</p>
                 </div>
                 <div className="values">
-                    <i class="fa-regular fa-gem"></i>
+                    <i className="fa-regular fa-gem"></i>
                     <h2>Core Values </h2>
                     <p>We posses and have displayed varied degree of values which our clients admire viz: Professionalism, Excellence, Integrity, Commitment & Dedication.</p>
                 </div>
