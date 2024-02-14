@@ -1,16 +1,23 @@
 import Picture from '/images/spa-slider22.webp'
+import {useEffect} from "react"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function About(){
+    useEffect(()=> {
+        Aos.init();
+    }, [])
+
     return(
         <div className="about">
             <div className="about-us-heading">
                 <h2>About Us</h2>
             </div>
             <div className="about-us-details">
-                <div className="about-image">
+                <div className="about-image" data-aos="zoom-in" data-aos-duration="2000">
                     <img src={Picture} className="about-pic" />
                 </div>
-                <div className="about-writeup">
+                <div className="about-writeup" data-aos="zoom-in-up">
                     <p>Fountain Shipping Services Limited is an indigenous shipping company that provides a wide range of shipping,</p>
                     <p>logistics and marine services in Nigerian ports and terminals. Incorporated in 2009, Fountain Shipping Services</p>
                     <p className="about-space">Limited offers top-notch services in the oil and gas industry.</p>
@@ -25,17 +32,17 @@ export default function About(){
                 </div>
             </div>
             <div className="about-core">
-                <div className="mission">
+                <div className="mission" data-aos="zoom-in">
                     <i className="fa-solid fa-rocket"></i>
                     <h2>Our mission</h2>
                     <p>To provide a world class range of professional quality services in the marine industry to all our clients.</p>
                 </div>
-                <div className="vision">
+                <div className="vision" data-aos="zoom-in">
                     <i className="fa-regular fa-lightbulb"></i>
                     <h2>Our Vision</h2>
                     <p>To be the foremost shipping company in Africa that is most admired for it's excellence, efficiency and professionalism.</p>
                 </div>
-                <div className="values">
+                <div className="values" data-aos="zoom-in">
                     <i className="fa-regular fa-gem"></i>
                     <h2>Core Values </h2>
                     <p>We posses and have displayed varied degree of values which our clients admire viz: Professionalism, Excellence, Integrity, Commitment & Dedication.</p>

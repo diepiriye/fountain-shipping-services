@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 20px;
   z-index: 4;
   box-shadow: 4px 4px 2px 0 rgba(0,0,0,.2);
 }
@@ -30,18 +31,20 @@
 }
 .logo-pic{
   width: 100%;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
 }
 .logo-name > p{
   margin-left: 10px;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 400;
   color: blue;
   letter-spacing: 2px; 
   text-shadow: 1px 1px 1px black
 }
-.logo-span{
-  color: red; 
+.menu{
+  //background: red;
 }
 ul{
   display: flex;
@@ -59,6 +62,9 @@ li a{
 li:hover{
   background: #F5F5DC;
   border-radius: 20px;
+}
+.toggle, .close{
+  display: none;
 }
 /**** STYLING THE HERO SECTION *****/
 .hero{
@@ -167,7 +173,9 @@ li:hover{
 .fa-rocket, .fa-lightbulb, .fa-gem{
   display: block;
   font-size: 100px;
-  color: blue;
+  //color: #FAF9F6;
+  //color: #b9f2ff;
+  color: #C0C0C0;
   margin: 0 0 20px 0;
 }
 .mission h2, .values h2, .vision h2{
@@ -219,16 +227,15 @@ li:hover{
 /**** STYLING THE CONTACT SECTION ******/
 .contact-container{
   background: #FAF9F6;
-  padding: 100px 100px;
+  padding: 100px 200px;
 
 }
 .contact-subcon{
   //background: red;
 }
 .contact-flex{
-  //background: white;
-  border-top: 1px dotted black;
-  margin: 20px 0;
+  border-top: 2px dotted #C0C0C0;
+  margin: 10px 0;
   padding: 20px 0px;
   display: flex;
   justify-content: space-between;
@@ -533,6 +540,117 @@ textarea{
     overflow-wrap: break-word;
   }
   
+}
+/**** STYLING THE NAVBAR SECTION *****/
+@media(max-width: 1124px){
+  .menu{
+    display: none;
+  }
+  .open{
+    background: white;
+    box-shadow: 4px 4px 2px 0 rgba(0,0,0,.2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*top: 124px;
+    left: 0;*/
+    width: 100%;
+    padding: 0 0 60px 0; 
+    text-align: center;
+    z-index: 3;
+    transition: 0.4s;
+    transform: translateX(-100%)
+  }
+  .show{
+    transform: translateX(0);
+  }
+  ul{
+    display: block;
+    margin-top: 100px;
+  }
+  li{
+    margin: 10px 0 0 0;
+    padding: 12px
+  }
+  li:hover{
+    border-radius: 0;  
+  }
+  .close{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding: 6px 10px
+  }
+  .close:hover{
+    background:rgba(0,0,0,.8);
+    border-radius: 20px;
+    color: white;
+  }
+  .toggle{
+    display: block;
+  } 
+}
+@media(max-width: 766px){
+  .logo-span{
+    display: none;
+  }
+}
+@media(max-width: 605px){
+  .logo-name > p{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: blue;
+    letter-spacing: 2px; 
+    text-shadow: 1px 1px 1px black
+  }
+}
+@media(max-width: 472px){
+  .navbar{
+    padding: 10px 30px;
+  }
+}
+@media(max-width: 371px){
+  .navbar{
+    padding: 10px 20px;
+  }
+  .logo-name > p{
+    margin-left: 5px;
+    font-size: 16px; 
+  }
+}
+@media(max-width: 330px){
+  .navbar{
+    padding: 10px 20px;
+  }
+  .logo-flex{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+  }
+  .logo{
+    width: 60px;
+  }
+  .toggle{
+    margin-right: 20px;
+    position: absolute;
+    top: 28px;
+    right: 0px;
+  }
+}
+@media(max-width: 305px){
+  .navbar{
+    padding: 10px;
+  }
+  .logo{
+    width: 50px;
+  }
+  .toggle{
+    margin-right: 10px; 
+    top: 24px;
+  }
 }
 
 
