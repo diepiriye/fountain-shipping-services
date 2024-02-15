@@ -173,9 +173,7 @@ li:hover{
 .fa-rocket, .fa-lightbulb, .fa-gem{
   display: block;
   font-size: 100px;
-  //color: #FAF9F6;
-  //color: #b9f2ff;
-  color: #C0C0C0;
+  color: blue;
   margin: 0 0 20px 0;
 }
 .mission h2, .values h2, .vision h2{
@@ -230,9 +228,6 @@ li:hover{
   padding: 100px 200px;
 
 }
-.contact-subcon{
-  //background: red;
-}
 .contact-flex{
   border-top: 2px dotted #C0C0C0;
   margin: 10px 0;
@@ -249,6 +244,21 @@ li:hover{
   padding: 10px;
   max-width: 400px;
   width: 100%;
+  line-height: 25px;
+}
+.contact-flex-writeup p{
+  font-size: 1em;
+  overflow-wrap: break-word;
+}
+.contact-flex-writeup p a{
+  text-decoration: none;
+  color: black;
+}
+.contact-flex-writeup .email-red, .email-redd{
+  font-weight: bolder;
+}
+#telephone{
+  color: black;
 }
 /**** STYLING THE FORM SECTION ***/
 .form-container{
@@ -517,17 +527,19 @@ textarea{
 }
 
 /**** STYLING THE CONTACT *****/
-@media(max-width: 820px){
+@media(max-width: 1002px){
   .contact-container{
-    padding: 100px 30px;
+    padding: 100px 100px;
   
   }
 }
-@media(max-width: 680px){
+@media(max-width: 802px){
   .contact-container{
     padding: 100px 50px;
   
   }
+}
+@media(max-width: 702px){
   .contact-flex{
     flex-direction: column;
     align-items:center;
@@ -536,11 +548,8 @@ textarea{
   .contact-flex h2{
     text-align: center;
   }
-  .contact-flex-writeup p{
-    overflow-wrap: break-word;
-  }
-  
 }
+
 /**** STYLING THE NAVBAR SECTION *****/
 @media(max-width: 1124px){
   .menu{
