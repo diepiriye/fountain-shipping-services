@@ -1,7 +1,8 @@
-export default function Contact(){
+export default function Contact(props){
+    const contactRef = props.contactRef
     
     return(
-        <div className="contact-container">
+        <div className="contact-container" id="contact" ref={contactRef}>
             <div className="contact-subcon">
                 <div className="contact-flex" data-aos="flip-down">
                     <h2>HEAD OFFICE</h2>

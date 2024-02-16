@@ -3,12 +3,14 @@ import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-export default function Services(){
+export default function Services(props){
+    const serviceRef = props.serviceRef;
+
     useEffect(()=> {
         Aos.init();
     }, [])
     return(
-        <div className="services-container">
+        <div className="services-container" id="service" ref={serviceRef}>
             <div className="service-tittle" data-aos="fade-down">
                 <h2>Our Services</h2>
             </div>

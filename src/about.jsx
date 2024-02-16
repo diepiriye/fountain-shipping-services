@@ -3,13 +3,15 @@ import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-export default function About(){
+export default function About(props){
+    const aboutRef = props.aboutRef;
+
     useEffect(()=> {
         Aos.init();
     }, [])
 
     return(
-        <div className="about">
+        <div className="about" id="about" ref={aboutRef}>
             <div className="about-us-heading">
                 <h2>About Us</h2>
             </div>
