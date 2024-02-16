@@ -4,6 +4,9 @@ export default function Contact(props){
     return(
         <div className="contact-container" id="contact" ref={contactRef}>
             <div className="contact-subcon">
+                <div className="contact-tittle">
+                    <h2>Contact Us</h2>
+                </div>
                 <div className="contact-flex" data-aos="flip-down">
                     <h2>HEAD OFFICE</h2>
                     <div className="contact-flex-writeup">
