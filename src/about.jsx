@@ -1,7 +1,11 @@
 import Picture from '/images/spa-slider22.webp'
 import {useEffect} from "react"
+/*** IMPORTING AOS  ****/
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+/*** IMPORTING LAZYLOADER */
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function About(props){
     const aboutRef = props.aboutRef;
@@ -17,7 +21,7 @@ export default function About(props){
             </div>
             <div className="about-us-details">
                 <div className="about-image" data-aos="zoom-in" data-aos-duration="2000">
-                    <img src={Picture} className="about-pic" />
+                    <LazyLoadImage src={Picture} className="about-pic" effect="blur"/>
                 </div>
                 <div className="about-writeup" data-aos="zoom-in-up">
                     <p>Fountain Shipping Services Limited is an indigenous shipping company that provides a wide range of shipping,</p>

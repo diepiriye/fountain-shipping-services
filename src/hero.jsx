@@ -2,6 +2,9 @@ import heroPic1 from '/images/spa-slider22.webp'
 import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+/*** IMPORTING LAZYLOADER */
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Hero(){
     useEffect(()=> {
@@ -12,7 +15,10 @@ export default function Hero(){
         <div className="hero">
             <div className="hero-flex">
                 <div className="hero-sub-flex" data-aos="fade-right">
-                    <img src={heroPic1} alt="" className="hero-picture"/>
+                    <LazyLoadImage 
+                    src={heroPic1} alt="" 
+                    className='hero-picture' 
+                    effect="blur"/>
                     <div className="hero-writeup">
                         <p>We pride ourselves on providing the best</p>
                         <p>transport & shipping services available </p>

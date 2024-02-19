@@ -1,5 +1,8 @@
 import { useRef, useState } from "react";
 import Logo from '/images/fountain logo.jpeg'
+/*** IMPORTING LAZYLOADER */
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Navbar(props){
     const homeRef = props.homeRef;
@@ -31,7 +34,7 @@ export default function Navbar(props){
             <div className="logo-flex">
                 <div className="logo">
                 <a href="#home" onClick={() => NavigateTo(homeRef, "home")}>
-                    <img src={Logo} alt="" className="logo-pic"/>
+                    <LazyLoadImage src={Logo} alt="" className="logo-pic" effect="blur"/>
                 </a>
                 </div>
                 <div className="logo-name">

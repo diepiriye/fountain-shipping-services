@@ -6,7 +6,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import picture1 from '/images/slider2.jpeg';
 import picture2 from '/images/slider3.jpeg'
-import picture3 from '/images/spa-slider22.webp'
+/*** IMPORTING LAZYLOADER */
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 
 export default function Slider(){
@@ -25,7 +27,7 @@ export default function Slider(){
         >
           <SwiperSlide>
                 <div className="picture-container">
-                    <img src={picture1} alt="slider1" className="slide-pictures" />
+                    <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
                     <div className="picture-message">
                         <h1>The Easemobile Spa </h1>
                         <p>A mobile-Spa that creates magical</p>
@@ -35,7 +37,7 @@ export default function Slider(){
           </SwiperSlide>
           <SwiperSlide>
                 <div className="picture-container">
-                    <img src={picture2} alt="slider1" className="slide-pictures" />
+                    <LazyLoadImage src={picture2} alt="slider1" className="slide-pictures" effect="blur"/>
                     <div className="picture-message">
                         <h1>The Easemobile Spa </h1>
                         <p>A mobile-Spa that creates magical</p>
@@ -45,7 +47,7 @@ export default function Slider(){
           </SwiperSlide>
           <SwiperSlide>
                 <div className="picture-container">
-                    <img src={picture3} alt="slider1" className="slide-pictures" />
+                    <LazyLoadImage src={picture2} alt="slider1" className="slide-pictures" effect="blur"/>
                     <div className="picture-message">
                         <h1>The Easemobile Spa </h1>
                         <p>A mobile-Spa that creates magical</p>

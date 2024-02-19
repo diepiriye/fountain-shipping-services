@@ -2,6 +2,9 @@ import Picture from '/images/spa-slider22.webp'
 import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+/*** IMPORTING LAZYLOADER */
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Services(props){
     const serviceRef = props.serviceRef;
@@ -16,7 +19,7 @@ export default function Services(props){
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                    <LazyLoadImage src={Picture} alt="" className="service-pic" effect="blur"/>
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>Ship Management</h2> 
@@ -31,12 +34,12 @@ export default function Services(props){
                    <p>Our corverage extends to 180 countries.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                <LazyLoadImage src={Picture} alt="" className="service-pic" effect="blur"/>
                 </div>
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                <LazyLoadImage src={Picture} alt="" className="service-pic" effect="blur"/>
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>Maritime Equipment Leasing</h2> 
