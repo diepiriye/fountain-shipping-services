@@ -1,3 +1,4 @@
+import {useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -9,52 +10,66 @@ import picture2 from '/images/slider3.jpeg'
 /*** IMPORTING LAZYLOADER */
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css'
+/***IMPORT AOS  */
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 export default function Slider(){
-    return(
-        <Swiper
-        modules={[Navigation, Pagination, Autoplay ]}
-        style={{background: "white", marginRight: "100px", marginLeft: "100px",
-                marginTop: "50px", borderTopRightRadius: "50px", borderTopLeftRadius: "50px"
+    useEffect(()=> {
+        Aos.init();
+    }, [])
 
-        }}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        autoplay={{ delay: 7000}}
-        pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-                <div className="picture-container">
-                    <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
-                    <div className="picture-message">
-                        <h1>The Easemobile Spa </h1>
-                        <p>A mobile-Spa that creates magical</p>
+    return(
+        <div className="swiper-containers">
+            <Swiper
+            modules={[Navigation, Pagination, Autoplay ]}
+            style={{background: "black", 
+                   borderTopRightRadius: "50px", borderTopLeftRadius: "50px"
+            }}
+            spaceBetween={50}
+            slidesPerView={1}
+            autoplay={{ delay: 7000}}
+            pagination={{ clickable: true }}
+            >
+            <SwiperSlide>
+                {({ isActive }) => (
+                    <div className={`picture-container ${isActive ? 'active' : 'not-active'}`}>
+                        <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
+                        {isActive && (
+                        <div className="picture-message">
+                            <h1 data-aos="flip-left" data-aos-delay="300">We Provide Professional </h1>
+                            <h1 data-aos="flip-left" data-aos-delay="700">Logistics Services in the Marine industry </h1>   
+                        </div>
+                        )}
                     </div>
-                   
-                </div>
-          </SwiperSlide>
-          <SwiperSlide>
-                <div className="picture-container">
-                    <LazyLoadImage src={picture2} alt="slider1" className="slide-pictures" effect="blur"/>
-                    <div className="picture-message">
-                        <h1>The Easemobile Spa </h1>
-                        <p>A mobile-Spa that creates magical</p>
+                )}
+            </SwiperSlide>
+            <SwiperSlide>
+                {({ isActive }) => (
+                    <div className={`picture-container ${isActive ? 'active' : 'not-active'}`}>
+                        <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
+                        {isActive && (
+                        <div className="picture-message">
+                            <h1 data-aos="flip-left" data-aos-delay="300">With Entergrity and Excellence</h1>
+                        </div>
+                        )}
                     </div>
-                   
-                </div>
-          </SwiperSlide>
-          <SwiperSlide>
-                <div className="picture-container">
-                    <LazyLoadImage src={picture2} alt="slider1" className="slide-pictures" effect="blur"/>
-                    <div className="picture-message">
-                        <h1>The Easemobile Spa </h1>
-                        <p>A mobile-Spa that creates magical</p>
+                )}
+            </SwiperSlide>
+            <SwiperSlide>
+                {({ isActive }) => (
+                    <div className={`picture-container ${isActive ? 'active' : 'not-active'}`}>
+                        <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
+                        {isActive && (
+                        <div className="picture-message">
+                            <h1 data-aos="flip-left" data-aos-delay="300">We are your Logistics Solutions</h1>
+                        </div>
+                        )}
                     </div>
-                    
-                </div>
-          </SwiperSlide>
-        </Swiper>
+                )}
+            </SwiperSlide>
+            </Swiper>
+        </div>
     )
 }
