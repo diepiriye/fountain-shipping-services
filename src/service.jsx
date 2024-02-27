@@ -1,4 +1,10 @@
 import Picture from '/images/spa-slider22.webp'
+import SlopRemoval from '/images/slop removal.jpeg'
+import Cash from '/images/cash-to-master.webp'
+import Chandler from '/images/ship-chandlers.jpeg'
+import ShipMain from '/images/ship-main.jpeg'
+import Freight from '/images/freight.svg'
+import ShipToShip from '/images/ship-to-ship.jpeg'
 import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -19,7 +25,7 @@ export default function Services(props){
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                    <LazyLoadImage src={Picture} alt="" className="service-pic" effect="blur"/>
+                    <LazyLoadImage src={ShipMain} alt="" className="service-pic" effect="blur"/>
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>Ship Management</h2> 
@@ -34,7 +40,7 @@ export default function Services(props){
                    <p>Our corverage extends to 180 countries.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
-                <LazyLoadImage src={Picture} alt="" className="service-pic" effect="blur"/>
+                <LazyLoadImage src={Freight} alt="" className="service-pic" effect="blur"/>
                 </div>
             </div>
             <div className="services">
@@ -53,12 +59,12 @@ export default function Services(props){
                    <p>We understand that short lead times, affordable and dependable service delivery are crucial for your vessel, and your crew. We have a full range of competitively priced services.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
-                <img src={Picture} alt="" className="service-pic" />
+                <img src={Chandler} alt="" className="service-pic" />
                 </div>
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                    <img src={Cash} alt="" className="service-pic" />
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>Cash TO Master</h2> 
@@ -76,7 +82,7 @@ export default function Services(props){
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                    <img src={ShipToShip} alt="" className="service-pic" />
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>S.T.S Operation</h2> 
@@ -89,7 +95,7 @@ export default function Services(props){
                    <p>Fountain Shipping Services has the professional competence in ship management, slops and freight.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                    <img src={SlopRemoval} alt="" className="service-pic" />
                 </div>
             </div>
         </div>

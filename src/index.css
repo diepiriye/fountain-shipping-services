@@ -121,8 +121,10 @@ li:hover{
   position: relative;
 }
 .slide-pictures{
-  width: 100%;
-  height: 100%;
+  /*THE WIDTH WAS STYLED INLINE*/
+  height: 450px;
+  object-position: center;
+  object-fit: cover;
 }
 .picture-message{
   position: absolute;
@@ -229,6 +231,7 @@ li:hover{
   font-size: 50px;
 }
 .service-image{
+  background: #F5F5F4;
   max-width: 500px;
   width: 500px;
   height: 400px;

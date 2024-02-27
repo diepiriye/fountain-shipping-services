@@ -5,8 +5,9 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import picture1 from '/images/slider2.jpeg';
-import picture2 from '/images/slider3.jpeg'
+import picture33 from '/images/slider3.webp'
+import picture22 from '/images/third-slider.jpg'
+import picture11 from '/images/slider1 copy.svg'
 /*** IMPORTING LAZYLOADER */
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css'
@@ -24,7 +25,7 @@ export default function Slider(){
         <div className="swiper-containers">
             <Swiper
             modules={[Navigation, Pagination, Autoplay ]}
-            style={{background: "black", 
+            style={{background: "#F5F5F4", 
                    borderTopRightRadius: "50px", borderTopLeftRadius: "50px"
             }}
             spaceBetween={50}
@@ -35,7 +36,7 @@ export default function Slider(){
             <SwiperSlide>
                 {({ isActive }) => (
                     <div className={`picture-container ${isActive ? 'active' : 'not-active'}`}>
-                        <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
+                        <LazyLoadImage src={picture11} alt="slider1" className="slide-pictures" effect="blur" width="100%"/>
                         {isActive && (
                         <div className="picture-message">
                             <h1 data-aos="flip-left" data-aos-delay="300">We Provide Professional </h1>
@@ -48,7 +49,7 @@ export default function Slider(){
             <SwiperSlide>
                 {({ isActive }) => (
                     <div className={`picture-container ${isActive ? 'active' : 'not-active'}`}>
-                        <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
+                        <LazyLoadImage src={picture22} alt="slider1" className="slide-pictures" effect="blur" width="100%" />
                         {isActive && (
                         <div className="picture-message">
                             <h1 data-aos="flip-left" data-aos-delay="300">With Entergrity and Excellence</h1>
@@ -60,7 +61,7 @@ export default function Slider(){
             <SwiperSlide>
                 {({ isActive }) => (
                     <div className={`picture-container ${isActive ? 'active' : 'not-active'}`}>
-                        <LazyLoadImage src={picture1} alt="slider1" className="slide-pictures" effect="blur"/>
+                        <LazyLoadImage src={picture33} alt="slider1" className="slide-pictures" effect="blur" width="100%"/>
                         {isActive && (
                         <div className="picture-message">
                             <h1 data-aos="flip-left" data-aos-delay="300">We are your Logistics Solutions</h1>
