@@ -1,4 +1,4 @@
-import heroPic1 from '/images/spa-slider22.webp'
+import heroPic1 from '/images/hero-image.jpeg'
 import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -20,8 +20,8 @@ export default function Hero(){
                     className='hero-picture' 
                     effect="blur"/>
                     <div className="hero-writeup">
-                        <p>We pride ourselves on providing the best</p>
-                        <p>transport & shipping services available </p>
+                        <p>We take pride in offering top-notch</p>
+                        <p>transport and shipping services</p>
                         <p>all over the world. </p>
                     </div>
                 </div>

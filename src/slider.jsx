@@ -5,7 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import picture33 from '/images/slider3.webp'
+import picture33 from '/images/Intel.svg'
 import picture22 from '/images/third-slider.jpg'
 import picture11 from '/images/slider1 copy.svg'
 /*** IMPORTING LAZYLOADER */

@@ -96,6 +96,8 @@ li:hover{
   max-width: 200px;
   width: 200px;
   height: 80px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 80px;
 }
 .hero-writeup{

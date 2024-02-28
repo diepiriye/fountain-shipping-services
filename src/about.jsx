@@ -1,4 +1,4 @@
-import Picture from '/images/spa-slider22.webp'
+import Picture from '/images/slider3.webp'
 import {useEffect} from "react"
 /*** IMPORTING AOS  ****/
 import Aos from 'aos'

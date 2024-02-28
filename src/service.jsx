@@ -5,6 +5,8 @@ import Chandler from '/images/ship-chandlers.jpeg'
 import ShipMain from '/images/ship-main.jpeg'
 import Freight from '/images/freight.svg'
 import ShipToShip from '/images/ship-to-ship.jpeg'
+import TugBoat from '/images/tug.jpeg'
+import Intel from '/images/port.jpeg'
 import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -40,12 +42,12 @@ export default function Services(props){
                    <p>Our corverage extends to 180 countries.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
-                <LazyLoadImage src={Freight} alt="" className="service-pic" effect="blur"/>
+                <LazyLoadImage src={Freight} alt="" className="service-pic" effect="blur" width="100%"/>
                 </div>
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                <LazyLoadImage src={Picture} alt="" className="service-pic" effect="blur"/>
+                <LazyLoadImage src={TugBoat} alt="" className="service-pic" effect="blur"/>
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>Maritime Equipment Leasing</h2> 
@@ -77,7 +79,7 @@ export default function Services(props){
                    <p>Fountain Shipping Services assists her clients in gathering relevant shipping information within the ports to enhance effective decision making.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
-                    <img src={Picture} alt="" className="service-pic" />
+                    <img src={Intel} alt="" className="service-pic" />
                 </div>
             </div>
             <div className="services">
