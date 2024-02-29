@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //overflow-x: hidden;
   font-family: 'Exo 2', sans-serif;
 }
 html{
@@ -81,7 +80,6 @@ li:hover{
 /**** STYLING THE HERO SECTION *****/
 .hero{
   background: red;
-  overflow: hidden;
   padding: 50px 100px 50px 100px;
 }
 .hero-flex{
@@ -216,7 +214,6 @@ li:hover{
 /**** OUR SERVICES ******/
 .services-container{
   background: #ffffff;
-  overflow: hidden;
   padding: 150px 100px;
 }
 .services{
@@ -394,7 +391,6 @@ textarea{
 }
 
 /**** MEDIA QUERY ****/
-/**** STYLING THE HERO SECTION *****/
 /**** STYLING THE SERBICES ********/
 @media(max-width: 1219px){
   .services-container{
@@ -407,11 +403,27 @@ textarea{
   }
 }
 @media(max-width: 1039px){
+  /*****STYLING THE SERVICES*****/
   .services-container{
     padding: 150px 20px;
   }
 }
+
+@media(max-width: 1019px){
+  /**** STYLING THE FOOTER*******/
+  .footer-container{
+    justify-content: unset;
+    column-gap: 120px;
+  }
+}
+@media(max-width: 992px){
+  /***** STYLING THE HERO SECTION****/
+  .logistic-flex h2{
+    font-size: 60px;
+  }
+}
 @media(max-width: 959px){
+  /**** STYLING THE SERVICES *****/
   .services{
     flex-direction: column;
     align-items: center;
@@ -430,29 +442,6 @@ textarea{
     width: 100%;
   }
 }
-@media(max-width: 489px){
-  .services-container{
-    padding: 80px 20px;
-  }
-  .service-tittle{
-    margin: 0 auto 40px auto;
-  }
-}
-
-/**** STYLING THE FOOTER*******/
-@media(max-width: 1019px){
-  .footer-container{
-    justify-content: unset;
-    column-gap: 120px;
-  }
-}
-@media(max-width: 992px){
-  /***** STYLING THE HERO SECTION****/
-  .logistic-flex h2{
-    font-size: 60px;
-  }
-}
-
 @media(max-width: 939px){
   /**** STYLING THE FOOTER*******/
   .footer-container{
@@ -553,6 +542,14 @@ textarea{
   .office{
     max-width: 300px;
     width: 100%;
+  }
+
+  /***** STYLING THE SERVICES *****/
+  .services-container{
+    padding: 80px 20px;
+  }
+  .service-tittle{
+    margin: 0 auto 40px auto;
   }
 }
 @media(max-width: 459px){
@@ -758,5 +755,3 @@ textarea{
     border-top-left-radius: 0;
   }
 }
-
-
