@@ -70,17 +70,14 @@ li a{
   text-decoration: none;
 }
 li:hover{
-  
   border-bottom: 2px solid black;
-  //border-radius: 20px;
-  
+  //border-radius: 20px; 
 }
 .toggle, .close{
   display: none;
 }
 /**** STYLING THE HERO SECTION *****/
 .hero{
-  background: red;
   overflow: hidden;
   padding: 50px 100px 50px 100px;
 }
@@ -629,7 +626,7 @@ textarea{
     padding: 12px
   }
   li:hover{
-    border-radius: 0;  
+    border-bottom: 0;
   }
   .close{
     display: block;

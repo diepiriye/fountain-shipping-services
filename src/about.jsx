@@ -35,6 +35,8 @@ export default function About(props){
                     <p className="about-space">Fountain Shipping Services Limited has a certified ISO 45001:2018 Occupational Health and Safety management system. </p>
                     <p>Our safety policy is a commitment to the implementation of ISO 45001:2018 which enables </p>
                     <p>us as an organization to provide a safe and healthy work environment. </p>
+                    <p>Furthermore, Fountain Shipping Services has a certified ISO 9001:2015 Quality Management System(Q.M.S.).</p>
+                    <p>The quality of our Services and Product conforms to industry standard and ISO requirements.</p>
                 </div>
             </div>
             <div className="about-core">
