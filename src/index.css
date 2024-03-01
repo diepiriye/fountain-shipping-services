@@ -142,6 +142,7 @@ li:hover{
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   color: white;
+  overflow: hidden;
 }
 .about-us-heading{
   max-width: 300px;
@@ -405,7 +406,8 @@ textarea{
     text-align: center;
     z-index: 5;
     transition: 0.4s;
-    transform: translateX(-100%)
+    transform: translateX(-100%);
+    overflow: hidden;
   }
   .show{
     transform: translateX(0);
