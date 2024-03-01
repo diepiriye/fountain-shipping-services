@@ -75,7 +75,7 @@ export default function Services(props){
             </div>
             <div className="services">
                 <div className="service-writeup" data-aos="fade-right">
-                   <h2>Shiping and Market Intelligence</h2> 
+                   <h2>Shipping and Market Intelligence</h2> 
                    <p>Fountain Shipping Services assists her clients in gathering relevant shipping information within the ports to enhance effective decision making.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">

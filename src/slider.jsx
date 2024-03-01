@@ -52,7 +52,7 @@ export default function Slider(){
                         <LazyLoadImage src={picture22} alt="slider1" className="slide-pictures" effect="blur" width="100%" />
                         {isActive && (
                         <div className="picture-message">
-                            <h1 data-aos="flip-left" data-aos-delay="300">With Entergrity and Excellence</h1>
+                            <h1 data-aos="flip-left" data-aos-delay="300">With Integrity and Excellence</h1>
                         </div>
                         )}
                     </div>
@@ -64,7 +64,7 @@ export default function Slider(){
                         <LazyLoadImage src={picture33} alt="slider1" className="slide-pictures" effect="blur" width="100%"/>
                         {isActive && (
                         <div className="picture-message">
-                            <h1 data-aos="flip-left" data-aos-delay="300">We are your Logistics Solutions</h1>
+                            <h1 data-aos="flip-left" data-aos-delay="300">We are your Logistic Solution</h1>
                         </div>
                         )}
                     </div>
