@@ -53,9 +53,6 @@ html{
 .menu a.active{
   color: red;
 }
-.menu{
-  //background: red;
-}
 ul{
   display: flex;
   align-items: center;
@@ -71,7 +68,6 @@ li a{
 }
 li:hover{
   border-bottom: 2px solid black;
-  //border-radius: 20px; 
 }
 .toggle, .close{
   display: none;
@@ -132,7 +128,6 @@ li:hover{
   position: absolute;
   top: 40%;
   left: 5%;
-  //transform: translate(-50%,-50%);
   color: white;
   font-size: 25px;
 }
@@ -259,6 +254,7 @@ li:hover{
 /**** STYLING THE CONTACT SECTION ******/
 .contact-container{
   background: #FAF9F6;
+  overflow: hidden;
   padding: 100px 200px;
 
 }
@@ -315,12 +311,10 @@ li:hover{
   row-gap: 40px;
 }
 .input-container{
-  //background: red;
   max-width: 500px;
   width: 100%;
 }
 .message-container{
-  //background: yellow;
   max-width: 600px;
   width: 100%;
 
@@ -391,208 +385,6 @@ textarea{
 }
 
 /**** MEDIA QUERY ****/
-/**** STYLING THE HERO SECTION *****/
-/**** STYLING THE SERBICES ********/
-@media(max-width: 1219px){
-  .services-container{
-    padding: 150px 60px;
-  }
-}
-@media(max-width: 1139px){
-  .service-writeup{
-    max-width: 400px;
-  }
-}
-@media(max-width: 1039px){
-  .services-container{
-    padding: 150px 20px;
-  }
-}
-@media(max-width: 959px){
-  .services{
-    flex-direction: column;
-    align-items: center;
-  }
-  .service-image{
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-  }
-  .service-pic{
-    max-width: 100%;
-    height: auto;
-  }
-  .service-writeup{
-    max-width: 600px;
-    width: 100%;
-  }
-}
-@media(max-width: 489px){
-  .services-container{
-    padding: 80px 20px;
-  }
-  .service-tittle{
-    margin: 0 auto 40px auto;
-  }
-}
-
-/**** STYLING THE FOOTER*******/
-@media(max-width: 1019px){
-  .footer-container{
-    justify-content: unset;
-    column-gap: 120px;
-  }
-}
-@media(max-width: 992px){
-  /***** STYLING THE HERO SECTION****/
-  .logistic-flex h2{
-    font-size: 60px;
-  }
-}
-
-@media(max-width: 939px){
-  /**** STYLING THE FOOTER*******/
-  .footer-container{
-    column-gap: 60px;
-  }
-@media(max-width: 900px){
-  .forms{
-    display: flex;
-    flex-direction: column;
-  }
-}
-  /**** STYLING THE ABOUT SESSION *****/
-  .about-us-details{
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .about-writeup{
-    max-width: 800px;
-    width: 100%;
-    line-height: 30px;
-  }
-
-}
-@media(max-width: 879px){
-  /**** STYLING THE FOOTER*******/
-  .footer-container{
-    column-gap: 40px;
-  }
-}
-@media(max-width: 879px){
-  /**** STYLING THE HERO SECTION ****/
-  .hero-flex{
-   flex-direction: column;
-   align-items: center;
-   row-gap: 20px;
-  }
-  /*.hero-sub-flex{
-    //background: yellow;
-    max-width: 400px;
-    width: 100%;
-    flex-direction:unset;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 20px;
-  }*/
-  .hero-writeup{
-    margin-bottom: 25px;
-  }
-}
-
-@media(max-width: 839px){
-  /**** STYLING THE FOOTER*******/
-  .footer-container{
-    column-gap: 10px;
-  }
-}
-@media(max-width: 779px){
-  /**** STYLING THE FOOTER*******/
-  .footer-container{
-   justify-content: space-between;
-  }
-}
-@media(max-width: 679px){
-  /**** STYLING THE ABOUT *****/
-  .about-core{
-    flex-direction: column;
-  }
-  .mission, .values, .vision{
-    max-width: 400px;
-    width: 100%;
-  }
-}
-@media(max-width: 666px){
-  .form-container{
-    padding: 50px 50px 100px 50px;
-  }
-}
-@media(max-width: 599px){
-  /***** STYLING THE HERO SECTION****/
-  .logistic-flex h2{
-    font-size: 40px;
-    font-weight: 900;
-  }
-}
-@media(max-width: 569px){
-  /**** STYLING THE FOOTER*******/
-  .footer{
-    padding: 60px 40px;
-  }
-}
-@media(max-width: 489px){
-  /**** STYLING THE FOOTER*******/
-  .footer-container{
-    flex-direction: column;
-    align-items: center;
-  }
-  .office{
-    max-width: 300px;
-    width: 100%;
-  }
-}
-@media(max-width: 459px){
-  /**** STYLING THE HERO SECTION ****/
-  .hero-flex{
-    align-items: center;
-  }
-  .form-container{
-    padding: 50px 20px 100px 20px;
-  }
-}
-@media(max-width: 340px){
-  /***** STYLING THE HERO SECTION****/
-  .logistic-flex h2{
-    font-size: 35px;
-    font-weight: bold;
-  }
-}
-
-/**** STYLING THE CONTACT *****/
-@media(max-width: 1002px){
-  .contact-container{
-    padding: 100px 100px;
-  
-  }
-}
-@media(max-width: 802px){
-  .contact-container{
-    padding: 100px 50px;
-  
-  }
-}
-@media(max-width: 702px){
-  .contact-flex{
-    flex-direction: column;
-    align-items:center;
-    row-gap: 20px;
-  }
-  .contact-flex h2{
-    text-align: center;
-  }
-}
-
 /**** STYLING THE NAVBAR SECTION *****/
 @media(max-width: 1124px){
   .menu{
@@ -664,6 +456,11 @@ textarea{
     padding: 10px 30px;
   }
 }
+@media(max-width: 400px){
+  .logo{
+    width: 60px;
+  }
+}
 @media(max-width: 371px){
   .navbar{
     padding: 10px 20px;
@@ -683,12 +480,12 @@ textarea{
     margin-right: 35px;
   }
   .logo{
-    width: 60px;
+    width: 50px;
   }
   .toggle{
     margin-right: 20px;
     position: absolute;
-    top: 28px;
+    top: 24px;
     right: 0px;
   }
 }
@@ -704,6 +501,8 @@ textarea{
     top: 20px;
   }
 }
+/**** END OF THE NARVBAR STYLING*****/
+
 /**** STYLING THE SLIDER ********/
 @media(max-width: 1240px){
   .picture-message{
@@ -746,14 +545,207 @@ textarea{
   .picture-message{
     font-size: 14px;
   }
-
 }
-/**** STYLING THE ABOUT SECTION*****/
+/****** END OF SLIDE STYLING *****/
+
+/**** STYLING THE ABOUT SESSION *****/
+@media(max-width: 939px){
+  .about-us-details{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-writeup{
+    max-width: 800px;
+    width: 100%;
+    line-height: 30px;
+  }
+}
 @media(max-width: 680px){
   .about{
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
 }
+@media(max-width: 679px){
+  .about-core{
+    flex-direction: column;
+  }
+  .mission, .values, .vision{
+    max-width: 400px;
+    width: 100%;
+  }
+}
+/**** THE END OF THE ABOUT SECTION *****/
 
+/**** STYLING THE SERBICES ********/
+@media(max-width: 1219px){
+  .services-container{
+    padding: 150px 60px;
+  }
+}
+@media(max-width: 1139px){
+  .service-writeup{
+    max-width: 400px;
+  }
+}
+@media(max-width: 1039px){
+  .services-container{
+    padding: 150px 20px;
+  }
+}
+@media(max-width: 959px){
+  .services{
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-image{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+  .service-pic{
+    max-width: 100%;
+    height: auto;
+  }
+  .service-writeup{
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media(max-width: 489px){
+  .services-container{
+    padding: 80px 20px;
+  }
+  .service-tittle{
+    margin: 0 auto 40px auto;
+  }
+}
+/***** END OF STYLING THE SERVICES SECTION ****/
 
+/**** STYLING THE CONTACT *****/
+@media(max-width: 1002px){
+  .contact-container{
+    padding: 100px 100px;
+  
+  }
+}
+@media(max-width: 802px){
+  .contact-container{
+    padding: 100px 50px;
+  
+  }
+}
+@media(max-width: 702px){
+  .contact-flex{
+    flex-direction: column;
+    align-items:center;
+    row-gap: 20px;
+  }
+  .contact-flex h2{
+    text-align: center;
+  }
+}
+/****** END OF CONTACT US STYLING ******/
+
+/**** STYLING THE FOOTER*******/
+@media(max-width: 1019px){
+  .footer-container{
+    justify-content: unset;
+    column-gap: 120px;
+  }
+}
+@media(max-width: 992px){
+  /***** STYLING THE HERO SECTION****/
+  .logistic-flex h2{
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 939px){
+  /**** STYLING THE FOOTER*******/
+  .footer-container{
+    column-gap: 60px;
+  }
+}
+@media(max-width: 900px){
+  .forms{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media(max-width: 879px){
+  /**** STYLING THE FOOTER*******/
+  .footer-container{
+    column-gap: 40px;
+  }
+}
+@media(max-width: 879px){
+  /**** STYLING THE HERO SECTION ****/
+  .hero-flex{
+   flex-direction: column;
+   align-items: center;
+   row-gap: 20px;
+  }
+  .hero-writeup{
+    margin-bottom: 25px;
+  }
+}
+
+@media(max-width: 839px){
+  /**** STYLING THE FOOTER*******/
+  .footer-container{
+    column-gap: 10px;
+  }
+}
+@media(max-width: 779px){
+  /**** STYLING THE FOOTER*******/
+  .footer-container{
+   justify-content: space-between;
+  }
+}
+@media(max-width: 666px){
+  .form-container{
+    padding: 50px 50px 100px 50px;
+  }
+}
+@media(max-width: 599px){
+  /***** STYLING THE HERO SECTION****/
+  .logistic-flex h2{
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+@media(max-width: 569px){
+  /**** STYLING THE FOOTER*******/
+  .footer{
+    padding: 60px 40px;
+  }
+}
+@media(max-width: 489px){
+  /**** STYLING THE FOOTER*******/
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .office{
+    max-width: 300px;
+    width: 100%;
+  }
+}
+@media(max-width: 459px){
+  /**** STYLING THE HERO SECTION ****/
+  .hero-flex{
+    align-items: center;
+  }
+  .form-container{
+    padding: 50px 20px 100px 20px;
+  }
+}
+@media(max-width: 340px){
+  /***** STYLING THE HERO SECTION****/
+  .logistic-flex h2{
+    font-size: 35px;
+    font-weight: bold;
+  }
+}

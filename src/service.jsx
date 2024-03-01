@@ -22,7 +22,7 @@ export default function Services(props){
     }, [])
     return(
         <div className="services-container" id="service" ref={serviceRef}>
-            <div className="service-tittle" data-aos="fade-down">
+            <div className="service-tittle" data-aos="zoom-in">
                 <h2>Our Services</h2>
             </div>
             <div className="services">
