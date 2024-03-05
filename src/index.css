@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //overflow-x: hidden;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 html{
   scroll-behavior: smooth;
@@ -406,8 +409,7 @@ textarea{
     text-align: center;
     z-index: 5;
     transition: 0.4s;
-    transform: translateX(-100%);
-    overflow: hidden;
+    transform: translateX(-100%); 
   }
   .show{
     transform: translateX(0);

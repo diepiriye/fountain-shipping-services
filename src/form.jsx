@@ -16,14 +16,16 @@ export default function Form(){
     }
     function sendMail(e){
         e.preventDefault();
+        console.log(form.current)
+        window.open("mailto:diepiriyeariel@gmail.com?subject=A%new%message&body="+encodeURI(form.current.message));
     
-        emailjs.sendForm('service_noc7mkr', 'template_jboy1z8', form.current, 'jicK3ER7wCIgP4A6P')
+        /*emailjs.sendForm('service_noc7mkr', 'template_jboy1z8', form.current, 'jicK3ER7wCIgP4A6P')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
           });
-          handleReset()
+          handleReset()*/
       };
 
     return(

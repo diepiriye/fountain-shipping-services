@@ -2,7 +2,7 @@ import Picture from '/images/spa-slider22.webp'
 import SlopRemoval from '/images/slop removal.jpeg'
 import Cash from '/images/cash-to-master.webp'
 import Chandler from '/images/ship-chandlers.jpeg'
-import ShipMain from '/images/ship-main.jpeg'
+import ShipMain from '/images/welding.svg'
 import Freight from '/images/freight.svg'
 import ShipToShip from '/images/ship-to-ship.jpeg'
 import TugBoat from '/images/tug.jpeg'
@@ -27,7 +27,7 @@ export default function Services(props){
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
-                    <LazyLoadImage src={ShipMain} alt="" className="service-pic" effect="blur"/>
+                    <LazyLoadImage src={ShipMain} alt="" className="service-pic" effect="blur" width="100%"/>
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
                    <h2>Ship Management</h2> 
@@ -58,7 +58,7 @@ export default function Services(props){
                 <div className="service-writeup" data-aos="fade-right">
                    <h2>Ship Chandelling</h2> 
                    <p>In todays shipping business, you need a trusted ship chandler to provide you with the provisions and supplies you need to keep your vessel on course.</p>
-                   <p>We understand that short lead times, affordable and dependable service delivery are crucial for your vessel, and your crew. We have a full range of competitively priced services.</p>
+                   <p>We understand that short lead times, affordable and dependable service delivery are crucial for your vessel, and your crew. We offer a comprehensive selection of services at competitive prices.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
                 <img src={Chandler} alt="" className="service-pic" />
@@ -94,7 +94,7 @@ export default function Services(props){
             <div className="services">
                 <div className="service-writeup" data-aos="fade-right">
                    <h2>Slops Removal</h2> 
-                   <p>Fountain Shipping Services has the professional competence in ship management, slops and freight.</p>
+                   <p>Fountain Shipping Services possesses professional expertise in the management of ships and slop removal.</p>
                 </div>
                 <div className="service-image" data-aos="flip-up">
                     <img src={SlopRemoval} alt="" className="service-pic" />
