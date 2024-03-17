@@ -58,7 +58,7 @@ export default function Form(){
                     <label htmlFor="message">Message</label>
                     <textarea 
                         name="message" id="message" cols="30" rows="10" 
-                        placeholder="Message" onChange={handleChange}
+                        placeholder="message" onChange={handleChange}
                         value={formInfo.message}
                     />
                     <button className="btn">SEND</button>
