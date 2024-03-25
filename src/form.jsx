@@ -1,5 +1,6 @@
 import { useState } from "react"
 import React, { useRef } from 'react'
+import emailjs from 'emailjs-com'
 
 export default function Form(){
     const [formInfo, setFormInfo] = useState(
@@ -14,18 +15,21 @@ export default function Form(){
             return{...formInfo, [e.target.name]: e.target.value,}
         })
     }
+
+    function handleReset(){
+        setFormInfo({name: '', email: '', phoneNumber: '', message:''})
+    }
+    
     function sendMail(e){
         e.preventDefault();
-        console.log(form.current)
-        window.open("mailto:diepiriyeariel@gmail.com?subject=A%new%message&body="+encodeURI(form.current.message));
-    
-        /*emailjs.sendForm('service_noc7mkr', 'template_jboy1z8', form.current, 'jicK3ER7wCIgP4A6P')
+        
+        emailjs.sendForm('service_ym0qwle', 'template_vkk1rms', form.current, 'jicK3ER7wCIgP4A6P')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
           });
-          handleReset()*/
+          handleReset()
       };
 
     return(
