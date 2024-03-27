@@ -12,6 +12,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 .App{
   width: 100%;
 }
@@ -315,7 +316,9 @@ li:hover{
 .form-container{
 
   padding: 50px 100px 100px 100px;
+  position: relative;
 }
+
 .forms{
   display: flex;
   justify-content: space-between;
@@ -360,6 +363,17 @@ textarea{
   margin: 10px 0;
   padding: 10px 20px;
   cursor: pointer;
+}
+.form-message{
+  background: #FAF9F6;
+  max-width: 150px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  color: red;
 }
 
 /**** styling the footer ****/
@@ -694,6 +708,9 @@ textarea{
   .forms{
     display: flex;
     flex-direction: column;
+  }
+  .form-message{
+    top: 290px;
   }
 }
 @media(max-width: 879px){

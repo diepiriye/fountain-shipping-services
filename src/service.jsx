@@ -2,11 +2,14 @@ import Picture from '/images/spa-slider22.webp'
 import SlopRemoval from '/images/slop removal.jpeg'
 import Cash from '/images/cash-to-master.webp'
 import Chandler from '/images/ship-chandlers.jpeg'
+import Chatter from '/images/chatter.jpg'
 import ShipMain from '/images/welding.svg'
-import Freight from '/images/freight.svg'
+import ShipAgency from '/images/freight.svg'
 import ShipToShip from '/images/ship-to-ship.jpeg'
 import TugBoat from '/images/tug.jpeg'
 import Intel from '/images/port.jpeg'
+import Freight from '/images/protect.svg'
+import Protective from '/images/protective.svg'
 import {useEffect} from "react"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -27,19 +30,48 @@ export default function Services(props){
             </div>
             <div className="services">
                 <div className="service-image" data-aos="flip-up">
+                    <LazyLoadImage src={ShipAgency} alt="" className="service-pic" effect="blur" width="100%"/>
+                </div>
+                <div className="service-writeup" data-aos="fade-left">
+                   <h2>Ship Agency</h2> 
+                   <p>We represent our pricipals, prominently oil and gas companies in safe berthing and sailing of</p>
+                   <p>their chartered tanker vessels, within West Africa.</p>
+                </div>
+            </div>
+            <div className="services">
+                <div className="service-writeup" data-aos="fade-left">
+                   <h2>Protective Agency</h2> 
+                   <p>We act on behalf of ship owners to ensure hitch free vessel operation at ports in West Africa</p>
+                </div>
+                <div className="service-image" data-aos="flip-up">
+                    <LazyLoadImage src={Protective} alt="" className="service-pic" effect="blur" width="100%"/>
+                </div>
+            </div>
+            <div className="services">
+                <div className="service-image" data-aos="flip-up">
                     <LazyLoadImage src={ShipMain} alt="" className="service-pic" effect="blur" width="100%"/>
                 </div>
                 <div className="service-writeup" data-aos="fade-left">
-                   <h2>Ship Management</h2> 
-                   <p>We have the professional competence in handling and managing vessels on-behalf of our principals and our own vessels.</p>
-                   <p>With skilled hands both on shore and on board, we are committed to deliver the best ship management experience.</p>
+                   <h2>Ship Husbandary</h2> 
+                   <p>We represent Ship owneres in carrying out proper repairs of equipments and outfit of the </p>
+                   <p>ship for a smooth voyage.</p>
+                   <p>We ease the stress from ship owners for Ship certification and revalidation of necessary ship documents.</p>
+                </div>
+            </div>
+            <div className="services">
+                <div className="service-writeup" data-aos="fade-right">
+                   <h2>Vessel Brokerage and Chattering</h2> 
+                   <p>Fountain Shipping Services strongly acquainted with vessel owners, are positioned to connect chatterers and ship owners alike.</p>
+                </div>
+                <div className="service-image" data-aos="flip-up">
+                <img src={Chatter} alt="" className="service-pic" />
                 </div>
             </div>
             <div className="services">
                 <div className="service-writeup" data-aos="fade-right">
                    <h2>Freight Management</h2> 
-                   <p>Our freight team is very experienced in handling any shape, size and weight of cargo to and from any where in the world.</p>
-                   <p>Our corverage extends to 180 countries.</p>
+                   <p>Our freight team is very experienced in handling any shape, size and weight of cargo to and from any where in West Africa.</p>
+                   
                 </div>
                 <div className="service-image" data-aos="flip-up">
                 <LazyLoadImage src={Freight} alt="" className="service-pic" effect="blur" width="100%"/>

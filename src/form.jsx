@@ -6,6 +6,7 @@ export default function Form(){
     const [formInfo, setFormInfo] = useState(
         {name: '', email: '', phoneNumber: '', message:''}
     )
+    const [showConfirmation, setShowConfirmation] = useState(false);
     const form = useRef();
     
     console.log(formInfo)
@@ -19,7 +20,7 @@ export default function Form(){
     function handleReset(){
         setFormInfo({name: '', email: '', phoneNumber: '', message:''})
     }
-    
+
     function sendMail(e){
         e.preventDefault();
         
@@ -29,6 +30,12 @@ export default function Form(){
           }, (error) => {
               console.log(error.text);
           });
+          /***** SHOW CONFIRM MESSAGE *****/
+            setShowConfirmation(true);
+            setTimeout(() => {
+            setShowConfirmation(false);
+            }, 10000); // 10 seconds
+         /***** END OF SHOW CONFIRM */
           handleReset()
       };
 
@@ -68,6 +75,11 @@ export default function Form(){
                     <button className="btn">SEND</button>
                 </div>
             </form>
+            {showConfirmation && (
+                <div className="form-message">
+                    <p>message sent</p>
+                </div>
+            )}
         </div>
     )
 }

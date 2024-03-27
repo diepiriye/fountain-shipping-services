@@ -27,11 +27,11 @@ export default function About(props){
                     <p>Fountain Shipping Services Limited is an indigenous shipping company that provides a wide range of shipping,</p>
                     <p>logistics and marine services in Nigerian ports and terminals. Incorporated in 2009, Fountain Shipping Services</p>
                     <p className="about-space">Limited offers top-notch services in the oil and gas industry.</p>
-                    <p>We are fully positioned to meet and exceed customers’ needs for quality and satisfaction be it onshore or offshore.</p>
-                    <p>We partner with globally recognized vessel owners and oil traders navigating the West Africa’s territorial waters, our</p>
+                    <p>We are fully positioned to meet and exceed customers’ needs for quality and satisfaction be it onshore or offshore Shipping services.</p>
+                    <p>We partner with globally recognized vessel owners and oil traders navigating with-in West Africa’s territorial waters, our</p>
                     <p className="about-space">experienced personnel effectively care for our operations to ensure efficiency, quality and professionalism.</p>
                     <p>Fountain Shipping Services is duly registered with relevant government agencies involved with shipping operations.</p>
-                    <p>Our offices are strategically located within Nigeria to serve our customers’ needs.</p>
+                    <p>Our offices are strategically located within Nigeria to meet our customers’ needs.</p>
                     <p className="about-space">Fountain Shipping Services Limited has a certified ISO 45001:2018 Occupational Health and Safety management system. </p>
                     <p>Our safety policy is a commitment to the implementation of ISO 45001:2018 which enables </p>
                     <p>us as an organization to provide a safe and healthy work environment. </p>

@@ -64,7 +64,7 @@ export default function Slider(){
                         <LazyLoadImage src={picture33} alt="slider1" className="slide-pictures" effect="blur" width="100%"/>
                         {isActive && (
                         <div className="picture-message">
-                            <h1 data-aos="flip-left" data-aos-delay="300">We are your Logistic Solution</h1>
+                            <h1 data-aos="flip-left" data-aos-delay="300">We are your Logistics Solution</h1>
                         </div>
                         )}
                     </div>

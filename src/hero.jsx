@@ -21,8 +21,8 @@ export default function Hero(){
                     effect="blur"/>
                     <div className="hero-writeup">
                         <p>We take pride in offering top-notch</p>
-                        <p>transport and shipping services</p>
-                        <p>all over the world. </p>
+                        <p>shipping-logistics services in all</p>
+                        <p>West African Ports. </p>
                     </div>
                 </div>
                 <div className="logistic-flex" data-aos="fade-left" data-aos-duration="2000">
